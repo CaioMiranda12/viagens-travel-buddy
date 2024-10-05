@@ -23,28 +23,25 @@ export function CarouselEvaluation(){
           <div className="bg-[#3045A5] p-2 flex flex-col gap-4 mr-2">
             <p className="text-yellow-500">5/5</p>
 
-            <p className="text-gray-100">Waters make fish every without firmament saw had. Morning air subdue. Our, air very one. Whales grass is fish whales 
-            winged.</p>
+            <p className="text-gray-100"> As águas fazem peixes todos sem serra do firmamento. O ar da manhã subjuga. Nosso, ar muito único. A grama das baleias é um peixe com asas de baleia.</p>
 
-            <p className="text-gray-100">-Reza mukhti</p>
+            <p className="text-gray-100">- João Silva</p>
           </div>
 
           <div className="bg-[#3045A5] p-2 flex flex-col gap-4 mr-2">
             <p className="text-yellow-500">5/5</p>
 
-            <p className="text-gray-100">Waters make fish every without firmament saw had. Morning air subdue. Our, air very one. Whales grass is fish whales 
-            winged.</p>
+            <p className="text-gray-100"> As águas fazem peixes todos sem serra do firmamento. O ar da manhã subjuga. Nosso, ar muito único. A grama das baleias é um peixe com asas de baleia.</p>
 
-            <p className="text-gray-100">-Reza mukhti</p>
+            <p className="text-gray-100">- João Silva</p>
           </div>
 
           <div className="bg-[#3045A5] p-2 flex flex-col gap-4 mr-2">
             <p className="text-yellow-500">5/5</p>
 
-            <p className="text-gray-100">Waters make fish every without firmament saw had. Morning air subdue. Our, air very one. Whales grass is fish whales 
-            winged.</p>
+            <p className="text-gray-100"> As águas fazem peixes todos sem serra do firmamento. O ar da manhã subjuga. Nosso, ar muito único. A grama das baleias é um peixe com asas de baleia.</p>
 
-            <p className="text-gray-100">-Reza mukhti</p>
+            <p className="text-gray-100">- João Silva</p>
           </div>
           </Carousel>
 

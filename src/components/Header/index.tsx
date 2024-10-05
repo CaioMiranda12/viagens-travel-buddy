@@ -6,13 +6,15 @@ import Link from 'next/link';
 
 export function Header() {
     return (
-        <div className='h-14 flex items-center justify-between px-6 sm:px-32'>
-            <Image src={Logo} alt='logo do site' className='w-32' />
+        <div className='h-20 flex items-center justify-between px-6 sm:px-32'>
+            <Link href='/'>
+                <Image src={Logo} alt='logo do site' className='w-40' />
+            </Link>
 
             <Menu as="div" className="relative inline-block text-left z-20 lg:hidden">
                 <div>
                     <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
-                        Options
+                        Páginas
                         <GoChevronDown aria-hidden="true" className="-mr-1 h-5 w-5 text-gray-400" />
                     </MenuButton>
                 </div>
@@ -23,46 +25,46 @@ export function Header() {
                 >
                     <div className="py-1">
                         <MenuItem>
-                            <a
+                            <Link
                                 href="#"
                                 className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                             >
-                                Home
-                            </a>
+                                Inicio
+                            </Link>
                         </MenuItem>
                         <MenuItem>
-                            <a
+                            <Link
                                 href="#"
                                 className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                             >
-                                About
-                            </a>
+                                Sobre
+                            </Link>
                         </MenuItem>
                         <MenuItem>
-                            <a
+                            <Link
                                 href="#"
                                 className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                             >
-                                Packages
-                            </a>
+                                Pacotes
+                            </Link>
                         </MenuItem>
                         <MenuItem>
-                            <a
+                            <Link
                                 href="#"
                                 className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                             >
-                                Places
-                            </a>
+                                Lugares
+                            </Link>
                         </MenuItem>
                         <MenuItem>
-                            <a
+                            <Link
                                 href="#"
                                 className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                             >
-                                Contact
-                            </a>
+                                Contato
+                            </Link>
                         </MenuItem>
-                        <form action="#" method="POST">
+                        {/* <form action="#" method="POST">
                             <MenuItem>
                                 <button
                                     type="submit"
@@ -71,30 +73,30 @@ export function Header() {
                                     Sign out
                                 </button>
                             </MenuItem>
-                        </form>
+                        </form> */}
                     </div>
                 </MenuItems>
             </Menu>
 
             <ul className='hidden lg:flex justify-center gap-10'>
                 <li>
-                    <Link href="#"className='hover:text-orange-600 hover:font-bold active:opacity-60'>Home</Link>
+                    <Link href="/"className='hover:text-orange-600 hover:font-bold active:opacity-60 text-xl'>Inicio</Link>
                 </li>
                 <li>
-                    <Link href="#" className='hover:text-orange-600 hover:font-bold active:opacity-60'>About</Link>
+                    <Link href="/sobre" className='hover:text-orange-600 hover:font-bold active:opacity-60 text-xl'>Sobre</Link>
                 </li>
                 <li>
-                    <Link href="#" className='hover:text-orange-600 hover:font-bold active:opacity-60'>Packages</Link>
+                    <Link href="#" className='hover:text-orange-600 hover:font-bold active:opacity-60 text-xl'>Pacotes</Link>
                 </li>
                 <li>
-                    <Link href="#" className='hover:text-orange-600 hover:font-bold active:opacity-60'>Places</Link>
+                    <Link href="#" className='hover:text-orange-600 hover:font-bold active:opacity-60 text-xl'>Lugares</Link>
                 </li>
                 <li>
-                    <Link href="#" className='hover:text-orange-600 hover:font-bold active:opacity-60'>Contact</Link>
+                    <Link href="#" className='hover:text-orange-600 hover:font-bold active:opacity-60 text-xl'>Contato</Link>
                 </li>
             </ul>
 
-            <button className='bg-orangeButton py-2 px-4 text-white text-sm hover:opacity-80 active:opacity-60'>Acessar conta</button>
+            <button className='bg-orangeButton py-2 px-4 text-white text-lg hover:opacity-80 active:opacity-60'>Agendar</button>
         </div>
     )
 }

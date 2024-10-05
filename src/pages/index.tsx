@@ -15,6 +15,8 @@ import serviceImg3 from '../assets/img-card-tsp-03 (2).svg'
 
 import { CarouselUpcoming } from "@/components/carouselUpcoming";
 import { CarouselEvaluation } from "@/components/carouselEvaluation";
+import { HotelServices } from "@/components/hotelServices";
+import { HotelsAndRestaurants } from '@/components/hotelsAndRestaurants'
 
 
 export default function Home() {
@@ -46,7 +48,7 @@ export default function Home() {
       ">
         <div className="h-full flex flex-col justify-center items-center mx-8 text-center">
           <h1 className="text-white font-bold text-3xl">Travel Buddy</h1>
-          <p className="text-white text-base my-4">Let’s start your journey with us, your dream will come true</p>
+          <p className="text-white text-base my-4">Vamos começar sua jornada conosco, seu sonho se tornará realidade</p>
           <button className="bg-orangeButton p-3 text-white hover:opacity-80 active:opacity-60">Pesquisar agora</button>
         </div>
       </main>
@@ -107,90 +109,20 @@ export default function Home() {
           <button className="bg-orangeButton py-2 text-white p-3 mt-6 hover:opacity-80 active:opacity-60">Descubra mais</button>
         </div>
 
-        <div className="mt-8 bg-[url(../assets/home-img-2.png)] bg-cover bg-center py-10 px-1 flex flex-row-reverse">
+        <div>
           <CarouselUpcoming />
         </div>
 
-        <div className="py-10 flex justify-center">
-          <div>
-            <div className="mb-5">
-              <h2 className="text-center text-2xl text-[#041562] font-bold">Top Hoteis e Restaurantes</h2>
-              <p className="text-center text-[#626262] text-sm">The Best Hotel & Restorants in Indonesia</p>
-            </div>
-
-            <div className="grid grid-cols-2 gap-4 px-8">
-              <div className=" flex flex-col gap-2">
-                <Image src={imgHotel} alt='imagem do hotel'/>
-                <p className="font-bold">Hotel Grand Indonesia</p>
-                <div>
-                  <p><span className="text-orange-500">4/5</span> (200 reviews)</p>
-                  <p className="text-[#626262]">Jakarta, Indonesia</p>
-                </div>
-              </div>
-
-              <div className=" flex flex-col gap-2">
-                <Image src={imgHotel2} alt='imagem do hotel'/>
-                <p className="font-bold">Hotel Grand Indonesia</p>
-                <div>
-                  <p><span className="text-orange-500">4/5</span> (200 reviews)</p>
-                  <p className="text-[#626262]">Jakarta, Indonesia</p>
-                </div>
-              </div>
-
-              <div className=" flex flex-col gap-2">
-                <Image src={imgHotel3} alt='imagem do hotel'/>
-                <p className="font-bold">Hotel Grand Indonesia</p>
-                <div>
-                  <p><span className="text-orange-500">4/5</span> (200 reviews)</p>
-                  <p className="text-[#626262]">Jakarta, Indonesia</p>
-                </div>
-              </div>
-
-              <div className=" flex flex-col gap-2">
-                <Image src={imgHotel} alt='imagem do hotel'/>
-                <p className="font-bold">Hotel Grand Indonesia</p>
-                <div>
-                  <p><span className="text-orange-500">4/5</span> (200 reviews)</p>
-                  <p className="text-[#626262]">Jakarta, Indonesia</p>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-      </div>
+        <div>
+          <HotelsAndRestaurants />
+        </div>
 
       <div className="p-8 bg-[#041562]">
         <CarouselEvaluation />
       </div>
 
-      <div className="px-5 py-10">
-        <div>
-            <h2 className="text-[#041562] text-2xl font-bold text-center">Oferecemos os melhores serviços</h2>
-            <p className="text-[#626262] text-center">The Best Service</p>
-
-            <div className="flex justify-center gap-3 mt-5">
-              <div>
-                <Image src={serviceImg} alt='imagem do serviço de hotel'/>
-                <p>Transporte</p>
-                <span className="text-gray-500">All transportation cost we bear</span>
-              </div>
-
-              <div>
-                <Image src={serviceImg2} alt='imagem do serviço de hotel'/>
-                <p>Organização</p>
-                <span className="text-gray-500">We offer the best guidence for you</span>
-              </div>
-
-              <div>
-                <Image src={serviceImg3} alt='imagem do serviço de hotel'/>
-                <p>Acomodação</p>
-                <span className="text-gray-500">Luxarious and comfortable</span>
-              </div>
-
-
-            </div>
-        </div>
+      <div>
+        <HotelServices />
       </div>
 
       
