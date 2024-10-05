@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export function Header() {
     return (
-        <div className='h-20 flex items-center justify-between px-6 sm:px-32'>
+        <div className='h-20 flex items-center justify-between px-6 sm:px-32 border-b'>
             <Link href='/'>
                 <Image src={Logo} alt='logo do site' className='w-40' />
             </Link>
@@ -26,7 +26,7 @@ export function Header() {
                     <div className="py-1">
                         <MenuItem>
                             <Link
-                                href="#"
+                                href="/"
                                 className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                             >
                                 Inicio
@@ -34,7 +34,7 @@ export function Header() {
                         </MenuItem>
                         <MenuItem>
                             <Link
-                                href="#"
+                                href="/sobre"
                                 className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                             >
                                 Sobre
@@ -42,7 +42,7 @@ export function Header() {
                         </MenuItem>
                         <MenuItem>
                             <Link
-                                href="#"
+                                href="/pacotes"
                                 className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                             >
                                 Pacotes
@@ -50,7 +50,7 @@ export function Header() {
                         </MenuItem>
                         <MenuItem>
                             <Link
-                                href="#"
+                                href="/lugares"
                                 className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                             >
                                 Lugares
@@ -58,7 +58,7 @@ export function Header() {
                         </MenuItem>
                         <MenuItem>
                             <Link
-                                href="#"
+                                href="/contato"
                                 className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                             >
                                 Contato
@@ -86,13 +86,13 @@ export function Header() {
                     <Link href="/sobre" className='hover:text-orange-600 hover:font-bold active:opacity-60 text-xl'>Sobre</Link>
                 </li>
                 <li>
-                    <Link href="#" className='hover:text-orange-600 hover:font-bold active:opacity-60 text-xl'>Pacotes</Link>
+                    <Link href="/pacotes" className='hover:text-orange-600 hover:font-bold active:opacity-60 text-xl'>Pacotes</Link>
                 </li>
                 <li>
-                    <Link href="#" className='hover:text-orange-600 hover:font-bold active:opacity-60 text-xl'>Lugares</Link>
+                    <Link href="/lugares" className='hover:text-orange-600 hover:font-bold active:opacity-60 text-xl'>Lugares</Link>
                 </li>
                 <li>
-                    <Link href="#" className='hover:text-orange-600 hover:font-bold active:opacity-60 text-xl'>Contato</Link>
+                    <Link href="/contato" className='hover:text-orange-600 hover:font-bold active:opacity-60 text-xl'>Contato</Link>
                 </li>
             </ul>
 

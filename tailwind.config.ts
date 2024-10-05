@@ -18,6 +18,9 @@ const config: Config = {
       maxWidth: {
         "80p": "80%"
       },
+      width: {
+        "80p": "80%"
+      }
     },
   },
   plugins: [],
