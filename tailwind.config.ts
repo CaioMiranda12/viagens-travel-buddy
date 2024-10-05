@@ -12,8 +12,15 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundColor: {
+        orangeButton: "#FF5403"
+      },
+      maxWidth: {
+        "80p": "80%"
+      },
     },
   },
   plugins: [],
-};
+}
+
 export default config;
