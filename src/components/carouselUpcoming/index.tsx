@@ -4,15 +4,16 @@
 import { SwiperProps, SwiperSlide } from "swiper/react";
 import { Slider } from "../Slider";
 
-import { upcoming } from '../../upcoming.json'
+import  upcoming from '../../upcoming.json'
 
 export function CarouselUpcoming() {
+  const upcomings = upcoming.upcoming
 
   const settings: SwiperProps = {
     spaceBetween: 50,
     slidesPerView: 1,
     navigation: true,
-    loop: upcoming.length >= 3
+    loop: upcomings.length >= 3
   }
 
   return (
@@ -20,7 +21,7 @@ export function CarouselUpcoming() {
       <Slider settings={settings}
     >
       {
-        upcoming.map(item => (
+        upcomings.map(item => (
           <SwiperSlide key={item.id} className="bg-white p-4 flex flex-col">
         <div>
           <p className="text-orange-400">Próximo evento</p>

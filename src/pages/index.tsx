@@ -76,7 +76,7 @@ export default function Home() {
                       href="#"
                       className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                     >
-                      Fortaleza
+                      Indonesia
                     </a>
                   </MenuItem>
                   <MenuItem>
@@ -84,7 +84,7 @@ export default function Home() {
                       href="#"
                       className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                     >
-                      Aracati
+                      Outro
                     </a>
                   </MenuItem>
                 </div>

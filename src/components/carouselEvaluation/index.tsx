@@ -1,9 +1,11 @@
 import { SwiperProps, SwiperSlide } from 'swiper/react';
 import { Slider } from '../Slider';
 
-import { evaluations } from '../../evaluations.json'
+import evaluation from '../../evaluations.json'
 
 export function CarouselEvaluation() {
+  const evaluations = evaluation.evaluations
+
   const settings: SwiperProps = {
     spaceBetween: 50,
     slidesPerView: 1,
