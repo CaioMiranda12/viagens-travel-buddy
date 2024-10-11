@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { GoChevronDown } from "react-icons/go";
 import Link from 'next/link';
+import { IoMenu } from "react-icons/io5";
 
 export function Header() {
     return (
@@ -13,9 +14,8 @@ export function Header() {
 
             <Menu as="div" className="relative inline-block text-left z-20 lg:hidden">
                 <div>
-                    <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
-                        Páginas
-                        <GoChevronDown aria-hidden="true" className="-mr-1 h-5 w-5 text-gray-400" />
+                    <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-blue-200 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+                        <IoMenu aria-hidden="true" className="h-5 w-5 text-black" />
                     </MenuButton>
                 </div>
 
@@ -96,7 +96,7 @@ export function Header() {
                 </li>
             </ul>
 
-            <button className='bg-orangeButton py-2 px-4 text-white text-lg hover:opacity-80 active:opacity-60'>Agendar</button>
+            <button className='bg-orangeButton py-2 px-4 text-white text-lg hover:opacity-80 active:opacity-60 hidden sm:block'>Agendar</button>
         </div>
     )
 }
